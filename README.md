@@ -121,7 +121,3 @@ B.Tech (AI & ML)
 
 ---
 
-## ✅ How to Run
-1. Open the notebook
-2. Run cells sequentially
-3. Review forecasts and inventory insights
