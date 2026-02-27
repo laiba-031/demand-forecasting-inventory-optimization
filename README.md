@@ -1,12 +1,12 @@
 # Demand Forecasting & Inventory Optimization
 
-## 📌 Project Overview
+## Project Overview
 This project implements an **end-to-end demand forecasting and inventory optimization pipeline** using large-scale retail time-series data.  
 The objective is to **forecast daily demand at store–item level** and convert predictions into **actionable inventory decisions**.
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 Retailers struggle with:
 - **Stock-outs**, leading to lost sales
 - **Over-stocking**, increasing holding costs
@@ -15,7 +15,7 @@ This project addresses both by combining **time-series machine learning** with *
 
 ---
 
-## 📊 Dataset Description
+## Dataset Description
 - **Granularity:** Daily sales  
 - **Time span:** 2019 – 2023  
 - **Scale:** 4.5M+ records  
@@ -30,26 +30,26 @@ This project addresses both by combining **time-series machine learning** with *
 
 ---
 
-## 🛠️ Methodology
+## Methodology
 
-### 1️⃣ Data Preprocessing
+### 1. Data Preprocessing
 - Sorted time-series data by store and item
 - Recomputed calendar features from date to avoid leakage
 - Validated data quality
 
-### 2️⃣ Exploratory Data Analysis
+### 2️. Exploratory Data Analysis
 - Sales trends and seasonality
 - Promotion impact on demand
 - Volatility across SKUs
 
-### 3️⃣ Feature Engineering
+### 3️. Feature Engineering
 - Lag features (1, 7, 14, 28 days)
 - Rolling averages (7, 14, 28 days)
 - Price and promotion signals
 
 ---
 
-## 🤖 Models Used
+## Models Used
 
 ### Baseline Models
 - **Naive Forecast** (previous day demand)
@@ -63,7 +63,7 @@ All models are evaluated using **time-based train–test splits**.
 
 ---
 
-## 📈 Evaluation Metrics
+## Evaluation Metrics
 - Mean Absolute Error (MAE)
 - Root Mean Squared Error (RMSE)
 - Mean Absolute Percentage Error (MAPE)
@@ -72,7 +72,7 @@ Baseline models establish a reference point, while ML models demonstrate measura
 
 ---
 
-## 📦 Inventory Optimization
+## Inventory Optimization
 Forecasted demand is converted into inventory decisions using:
 - Lead time assumptions
 - Safety stock calculation
@@ -81,7 +81,7 @@ Forecasted demand is converted into inventory decisions using:
 
 ---
 
-## 📊 Key Insights
+## Key Insights
 - ML models outperform statistical baselines
 - Lagged demand and rolling features are dominant predictors
 - Conservative reorder policies significantly reduce stock-out risk
@@ -89,7 +89,7 @@ Forecasted demand is converted into inventory decisions using:
 
 ---
 
-## 🧠 Business Impact
+## Business Impact
 The solution supports:
 - Better demand planning
 - Reduced stock-outs and excess inventory
@@ -97,7 +97,7 @@ The solution supports:
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 - Probabilistic forecasting
 - Dynamic service levels
 - Real-time retraining
@@ -105,7 +105,7 @@ The solution supports:
 
 ---
 
-## 🧑‍💻 Tech Stack
+## Tech Stack
 - Python
 - Pandas, NumPy
 - Scikit-learn
@@ -115,7 +115,7 @@ The solution supports:
 
 ---
 
-## 📌 Author
+## Author
 **Laiba Ali Naqvi**  
 B.Tech (AI & ML)
 
